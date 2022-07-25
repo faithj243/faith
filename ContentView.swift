@@ -1,21 +1,32 @@
 //
 //  ContentView.swift
-//  y
+//  LegalTimess
 //
-//  Created by student1 on 7/15/22.
+//  Created by student1 on 7/25/22.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        HStack(spacing:0) {
-            Rectangle ()
-                .foregroundColor(Color.blue)
-            Rectangle ()
-                .foregroundColor(Color.red)
-            Rectangle ()
-                .foregroundColor(Color.white)
+        VStack(spacing:40) {
+            Image("Legal")
+                .resizable()
+                .padding()
+            Button("Register") {
+                
+            }
+            .padding(EdgeInsets(top: 12, leading: 20, bottom: 12, trailing: 20))
+            .foregroundColor(Color.white)
+            .background(Color.black)
+            .cornerRadius(100)
+            Button("Sign In") {
+                
+            }
+            .padding(EdgeInsets(top: 12, leading: 20, bottom: 12, trailing: 20))
+            .foregroundColor(Color.white)
+            .background(Color.black)
+            .cornerRadius(100)
         }
     }
 }
@@ -23,6 +34,5 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .previewInterfaceOrientation(.landscapeRight)
     }
 }
